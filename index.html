@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiyomi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Floating background shapes -->
+  <div class="bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo"></div>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-tab="about">About</button>
+      <button class="nav-tab" data-tab="projects">Projects</button>
+      <button class="nav-tab" data-tab="resume">Resume</button>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- ==================== ABOUT TAB ==================== -->
+    <section id="about" class="tab-content active">
+      <div class="hero fade-in">
+        <div class="hero-text">
+          <p class="greeting">Hello, I'm</p>
+          <h1 class="name">Kiyomi</h1>
+          <p class="bio">
+            I’m a student graduating in Spring 2026 at the University of Washington! Currently, I am a teaching assistant for the UW iSchool and am very interested in pursuing a career in Project/Product Management and UI/UX Design.
+          </p>
+          <div class="hero-buttons">
+            <a href="https://www.linkedin.com/in/kiyomikomatsu/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="resume.pdf" download class="btn btn-secondary">Download Resume</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats / Highlights -->
+      <div class="stats fade-in-delay">
+        <div class="stat-card">
+          <span class="stat-number" data-count="3">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="2-3">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS TAB ==================== -->
+    <section id="projects" class="tab-content">
+      <h2 class="section-title fade-in">My Projects</h2>
+      <p class="section-subtitle fade-in">A selection of work I'm proud of</p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <div class="project-placeholder-img">01</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Valorant Tournament Analysis</h3>
+            <p class="project-desc">
+              Developed an interactive website that analyzed tournament results to find top performing teams.
+Organized and filtered differing datasets with 1,000+ rows to highlight key data points.
+Implemented and deployed 3 interactive data visualizations to an online shiny web app.
+            </p>
+            <div class="project-tags">
+              <span class="tag">R</span>
+              <span class="tag">Shiny</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <div class="project-placeholder-img">02</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Blossom Support Platform</h3>
+            <p class="project-desc">
+              Created and deployed interactive, AI-driven tools that provide 24/7 support and resources, ensuring immediate assistance for postpartum mothers. 
+Produced a series of guided activities and pain management exercises tailored to individual user needs, supported by an extensive video library for self-guided learning.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Html</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <div class="project-placeholder-img">03</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Huskies Handmade Site</h3>
+            <p class="project-desc">
+              Huskies Handmade is a proposed web app that allows University of Washington students to showcase and discover handmade goods created by their peers.
+The platform supports student creators and students interested in shopping from student-run small businesses, fostering a campus-based entrepreneurial community.
+Designed and built using JavaScript, HTML, and CSS.with inclusivity and accessibility in mind to reduce barriers for underrepresented students and encourage broad participation.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESUME TAB ==================== -->
+    <section id="resume" class="tab-content">
+      <h2 class="section-title fade-in">Resume</h2>
+      <p class="section-subtitle fade-in">My professional background</p>
+
+      <div class="resume-wrapper fade-in">
+        <div class="resume-columns">
+          <!-- Left Column -->
+          <div class="resume-col">
+            <div class="resume-block">
+              <h3 class="resume-heading">
+                <span class="resume-icon">&#127891;</span> Education
+              </h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">Expected 2026</span>
+                  <h4>Bachelors of Science in Informatics</h4>
+                  <p>University of Washington</p>
+                  <ul class="timeline-details">
+                    <li>Minor: Business Administration &ndash; Management</li>
+                    <li>Relevant Coursework: Product and Information Systems Management, Databases and Data Modeling</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-block">
+              <h3 class="resume-heading">
+                <span class="resume-icon">&#128188;</span> Work Experience
+              </h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">June 2025 &ndash; August 2025</span>
+                  <h4>Project Management and QA Engineering Intern</h4>
+                  <p>Semify</p>
+                  <ul class="timeline-details">
+                    <li>Collaborate with a team of 5+ engineers to QA test new features and bug fixes, identify 10&ndash;20 issues per sprint in Jira; write and execute SQL queries in the database to extract and validate data for testing and troubleshooting.</li>
+                    <li>Draft 20+ Product Requirements Documents by organizing feature details and success criteria in a clear, structured format; facilitate communication between engineering, product, and QA teams to ensure alignment.</li>
+                  </ul>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-date">March 2024 &ndash; November 2025</span>
+                  <h4>Teaching Assistant</h4>
+                  <p>University of Washington iSchool</p>
+                  <ul class="timeline-details">
+                    <li>Support students in delivering clear and concise explanations to over 100+ students, effectively simplifying complex concepts for students to understand in SQL and R.</li>
+                    <li>Showcases skills through daily teaching with a diverse student body, demonstrates attentiveness in one-on-one tutoring and meeting grading deadlines tentatively.</li>
+                  </ul>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-date">June 2022 &ndash; September 2022</span>
+                  <h4>UI/UX Intern</h4>
+                  <p>Udooku</p>
+                  <ul class="timeline-details">
+                    <li>Develop and work alongside product managers and developers to create multiple interactive platform prototypes.</li>
+                    <li>Participate in co-creation workshops with stakeholders and users to gather insights and align design goals with business objectives.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="resume-col">
+            <div class="resume-block">
+              <h3 class="resume-heading">
+                <span class="resume-icon">&#127941;</span> Leadership Experience
+              </h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">September 2020 &ndash; July 2021</span>
+                  <h4>Rocketry Team Leader</h4>
+                  <p>NASA Student Launch Initiative</p>
+                  <ul class="timeline-details">
+                    <li>Engaged in collaborative construction and design of a high-powered rocket featuring a fully operational scientific payload.</li>
+                    <li>Demonstrated expertise by delivering meticulously crafted reports and presentations to esteemed NASA scientists and engineers.</li>
+                    <li>Recognized with the Rookie Award for flawless representation for a high school team in a college dominant competition and well made high-powered rocket.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-block">
+              <h3 class="resume-heading">
+                <span class="resume-icon">&#128736;</span> Skills
+              </h3>
+              <p class="skills-list">R, Python, Figma, Canva, Adobe, Shiny, SQL, HTML, CSS, JavaScript, Time Management, Communicative, Organization, Leadership Qualities, Fast Learner</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-download">
+          <a href="resume.pdf" download class="btn btn-primary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Full Resume (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
